@@ -185,28 +185,28 @@ const ot = [
   Vn = { 56: "https://bscscan.com/", 97: "https://testnet.bscscan.com/" },
   Gn = {
     56: {
-      SKYNET: "0x0409633A72D846fc5BBe2f98D88564D35987904D",
-      LP_SKYNET_BNB: "0xdff88a0a43271344b760b58a35076bf05524195c",
-      SKYNET_LEGACY: "0xdff88a0a43271344b760b58a35076bf05524195c",
-      PHX: "0x2A44baB23e3869044083deEF23c9ad0Abd88518F",
+      RUBIX: "0x0409633A72D846fc5BBe2f98D88564D35987904D",
+      LP_RUBIX_BNB: "0xdff88a0a43271344b760b58a35076bf05524195c",
+      RUBIX_LEGACY: "0xdff88a0a43271344b760b58a35076bf05524195c",
+      RUBIX: "0x2A44baB23e3869044083deEF23c9ad0Abd88518F",
     },
     97: {
-      SKYNET: "0xB19586D1C0322Fc48bB784f5aF4A862c21dd03f3",
-      LP_SKYNET_BNB: "0xf09f5e21f86692c614d2d7b47e3b9729dc1c436f",
-      SKYNET_LEGACY: "0xf09f5e21f86692c614d2d7b47e3b9729dc1c436f",
-      PHX: "0x778aff493ec182e948f462fa45396dfa7d9af7c3",
+      RUBIX: "0xB19586D1C0322Fc48bB784f5aF4A862c21dd03f3",
+      LP_RUBIX_BNB: "0xf09f5e21f86692c614d2d7b47e3b9729dc1c436f",
+      RUBIX_LEGACY: "0xf09f5e21f86692c614d2d7b47e3b9729dc1c436f",
+      RUBIX: "0x778aff493ec182e948f462fa45396dfa7d9af7c3",
     },
   },
   qn = {
     56: {
-      SKYNET_V1: "0x0b29cc2a4bbc9cb75519cdcd3995de9e7a914fb1",
-      SKYNET_V2: "0xadA58Cf32276CCD03a1C155688eFF8B3BC282285",
-      LP_SKYNET_BNB: "0xadA58Cf32276CCD03a1C155688eFF8B3BC282285",
+      RUBIX_V1: "0x0b29cc2a4bbc9cb75519cdcd3995de9e7a914fb1",
+      RUBIX_V2: "0xadA58Cf32276CCD03a1C155688eFF8B3BC282285",
+      LP_RUBIX_BNB: "0xadA58Cf32276CCD03a1C155688eFF8B3BC282285",
     },
     97: {
-      SKYNET_V1: "0x65479eB445368F79FE8b73E0CC375C0042f8F748",
-      SKYNET_V2: "0x65479eB445368F79FE8b73E0CC375C0042f8F748",
-      LP_SKYNET_BNB: "0x65479eB445368F79FE8b73E0CC375C0042f8F748",
+      RUBIX_V1: "0x65479eB445368F79FE8b73E0CC375C0042f8F748",
+      RUBIX_V2: "0x65479eB445368F79FE8b73E0CC375C0042f8F748",
+      LP_RUBIX_BNB: "0x65479eB445368F79FE8b73E0CC375C0042f8F748",
     },
   },
   it = parseInt("56"),
@@ -215,7 +215,7 @@ const ot = [
   Xn = Vn[D],
   G = Gn[D],
   Te = qn[D],
-  lt = G.SKYNET,
+  lt = G.RUBIX,
   Yn = 3,
   Ce = 4e5;
 _t.from((60 / Yn) * 60 * 24 * 365);
@@ -370,7 +370,7 @@ const ea = 2,
   aa = "PUBEXTERNALLIC",
   Se = _(!1),
   dt = _(null),
-  mt = Yt("SKYNET-staker-wallet-name", "");
+  mt = Yt("RUBIX-staker-wallet-name", "");
 de.setDefaults({
   thousandSeparated: !0,
   mantissa: 2,
@@ -554,10 +554,10 @@ const da = P(ee)(({ theme: { palette: t } }) => ({
     boxShadow: "none",
   },
   "&.MuiButton-contained": {
-    background: "linear-gradient(80.54deg, #E6000F 0%, #FF6400 100%)",
+    background: "linear-gradient(80.54deg, #ECAD09 0%, #ECAD09 100%)",
     "&:hover": {
       background:
-        "linear-gradient(0deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), linear-gradient(80.54deg, #E6000F 0%, #FF6400 100%)",
+        "linear-gradient(0deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), linear-gradient(80.54deg, #ECAD09 0%, #ECAD09 100%)",
     },
     "&.Mui-disabled": {
       background:
@@ -566,11 +566,11 @@ const da = P(ee)(({ theme: { palette: t } }) => ({
   },
   "&.MuiButton-outlined": {
     background: "transparent",
-    border: "3px solid #FF6400",
+    border: "3px solid #ECAD09",
     "&:hover": {
       background: t.text.primary,
       borderColor: t.text.primary,
-      color: "#E6000F",
+      color: "#ECAD09",
     },
     "&.Mui-disabled": {
       background: "",
@@ -638,7 +638,7 @@ function ga() {
             color: "rgba(255,255,255,0.5)",
             textTransform: "uppercase",
             transition: "color 0.25s",
-            ":hover": { color: "#E6000F" },
+            ":hover": { color: "#ECAD09" },
             "::before": {
               content: a === t ? "''" : void 0,
               display: "block",
@@ -647,7 +647,7 @@ function ga() {
               left: "50%",
               width: "2px",
               height: "100%",
-              background: "linear-gradient(to right, #e6000f 0%, #ff6400 100%)",
+              background: "linear-gradient(to right, #ECAD09 0%, #ECAD09 100%)",
               transform: "translate(-2px, -20px)",
             },
           },
@@ -665,35 +665,35 @@ function xa(t) {
   const { shortAccount: n, connected: s } = I(),
     a = C(dt),
     r = j(Se),
-    { available: o } = C(Y("PHX")),
-    { available: l } = C(Y("SKYNET_LEGACY")),
-    { available: y } = C(Y("SKYNET")),
+    { available: o } = C(Y("RUBIX")),
+    { available: l } = C(Y("RUBIX_LEGACY")),
+    { available: y } = C(Y("RUBIX")),
     c = i.exports.useMemo(
       () => (a == null ? void 0 : a.connectorId) === F.Injected,
       [a == null ? void 0 : a.connectorId]
     ),
     u = [
       {
-        label: "$SKYNET Balance",
+        label: "$RUBIX Balance",
         amount: o,
-        address: G.PHX,
-        symbol: "$SKYNET",
+        address: G.RUBIX,
+        symbol: "$RUBIX",
         decimals: 18,
         logo: "",
       },
       {
-        label: "$SKYNETv1 Balance",
+        label: "$RUBIXv1 Balance",
         amount: l,
-        address: G.SKYNET_LEGACY,
-        symbol: "$SKYNETV1",
+        address: G.RUBIX_LEGACY,
+        symbol: "$RUBIXV1",
         decimals: 18,
         logo: ce,
       },
       {
-        label: "$SKYNETv2 Balance",
+        label: "$RUBIXv2 Balance",
         amount: y,
-        address: G.SKYNET,
-        symbol: "$SKYNETV2",
+        address: G.RUBIX,
+        symbol: "$RUBIXV2",
         decimals: 18,
         logo: ce,
       },
@@ -960,7 +960,7 @@ function ka() {
           e.createElement(m, {
             component: "img",
             src: ya,
-            alt: "Skynet Global",
+            alt: "RUBIX Global",
             height: 30,
           })
         ),
@@ -970,7 +970,7 @@ function ka() {
           e.createElement(m, {
             component: "img",
             src: fa,
-            alt: "Skynet Global",
+            alt: "RUBIX Global",
             height: 22,
           })
         )
@@ -1159,7 +1159,7 @@ function Fa({ pool: t }) {
             "div",
             { style: { display: "flex", alignItems: "center" } },
             (function () {
-              if (t == "SKYNET_V1") return "- -";
+              if (t == "RUBIX_V1") return "- -";
               if (n && o) {
                 const p = u(s);
                 return p ? Be(p) + "%" : "- -";
@@ -1169,7 +1169,7 @@ function Fa({ pool: t }) {
                 return `${Be(p)}% ~ ${Be(d)}%`;
               }
             })(),
-            t != "SKYNET_V1" &&
+            t != "RUBIX_V1" &&
               e.createElement("img", {
                 src: Ha,
                 onClick: () => vt.emit(),
@@ -1177,7 +1177,7 @@ function Fa({ pool: t }) {
               })
           ),
         },
-        { label: "Total Staked", value: `${T(l)} SKYNET` },
+        { label: "Total Staked", value: `${T(l)} RUBIX` },
       ];
       return (
         n &&
@@ -1411,7 +1411,7 @@ var kt = [
           { internalType: "uint256", name: "max", type: "uint256" },
           { internalType: "uint256", name: "weight", type: "uint256" },
         ],
-        internalType: "struct SKYNETStaking.RateLevel",
+        internalType: "struct RUBIXStaking.RateLevel",
         name: "",
         type: "tuple",
       },
@@ -1744,7 +1744,7 @@ function La(s) {
           );
           const g = await d.wait(1);
           console.log("Harvest:", g),
-            r(`Successfully harvested ${T(c)} SKYNET`, { variant: "success" }),
+            r(`Successfully harvested ${T(c)} RUBIX`, { variant: "success" }),
             y();
         } catch (d) {
           r(ae(d), { variant: "error" });
@@ -1767,7 +1767,7 @@ function La(s) {
           fontSize: "14px",
           fontWeight: 500,
         },
-        "SKYNET EARNED"
+        "RUBIX EARNED"
       ),
       e.createElement(
         bn,
@@ -1887,7 +1887,7 @@ const Da = P(ee)({
   },
 });
 function Ct({
-  tokenName: t = "SKYNET",
+  tokenName: t = "RUBIX",
   input: n,
   onInput: s,
   amount: a,
@@ -2076,7 +2076,7 @@ function Oa(s) {
               e.createElement(
                 x,
                 { component: "span", color: "textSecondary" },
-                "SKYNET"
+                "RUBIX"
               )
             )
           )
@@ -2130,7 +2130,7 @@ function Wa(s) {
             e.createElement(
               x,
               { fontSize: { xs: "20px", md: "30px" }, fontWeight: "600" },
-              "Unstaking history (SKYNET V1)"
+              "Unstaking history (RUBIX V1)"
             ),
             e.createElement(
               ge,
@@ -2183,7 +2183,7 @@ function Ua({ pool: t, logo: n }) {
       );
       const E = await k.wait(1);
       console.log("Unstake:", E),
-        c(`Successfully unstaked ${T(p)} SKYNET`, { variant: "success" }),
+        c(`Successfully unstaked ${T(p)} RUBIX`, { variant: "success" }),
         u(),
         g();
     }, [b, p, c, u, g]),
@@ -2234,24 +2234,24 @@ const Na = P(ee)(({ theme: { breakpoints: t } }) => ({
     },
   })),
   za = {
-    SKYNET_V2: {
+    RUBIX_V2: {
       Stake:
         "There is a 7-day unstaking holding period before funds can be withdrawn to your wallet.",
       Unstake: e.createElement(
         e.Fragment,
         null,
-        "Unstaking is subject to a 7-day hold. Once the hold has been completed, you may withdraw your SKYNET back to your wallet.",
+        "Unstaking is subject to a 7-day hold. Once the hold has been completed, you may withdraw your RUBIX back to your wallet.",
         e.createElement("br", null),
         e.createElement("br", null),
         "Note: Unstaking will automatically harvest your rewards."
       ),
     },
-    SKYNET_V1: {
+    RUBIX_V1: {
       Stake: "",
       Unstake: e.createElement(
         e.Fragment,
         null,
-        "The unstaking hold period has been removed for this pool. You may immediately withdraw your SKYNET to your wallet below after unstaking first.",
+        "The unstaking hold period has been removed for this pool. You may immediately withdraw your RUBIX to your wallet below after unstaking first.",
         e.createElement("br", null),
         e.createElement("br", null),
         "Note: Unstaking will automatically harvest your rewards."
@@ -2325,7 +2325,7 @@ function _a({ pool: t, token: n, logo: s, disabledActions: a }) {
       );
       const J = await H.wait(1);
       console.log("Stake:", J),
-        p(`Successfully staked ${T(h)} SKYNET`, { variant: "success" }),
+        p(`Successfully staked ${T(h)} RUBIX`, { variant: "success" }),
         g(),
         se();
     }, [z, A, v, p, g, se]),
@@ -2344,7 +2344,7 @@ function _a({ pool: t, token: n, logo: s, disabledActions: a }) {
       );
       const H = await h.wait(1);
       console.log("Apply:", H),
-        p(`Successfully applied withdrawal of ${T(A)} SKYNET`, {
+        p(`Successfully applied withdrawal of ${T(A)} RUBIX`, {
           variant: "success",
         }),
         g(),
@@ -2398,7 +2398,7 @@ function _a({ pool: t, token: n, logo: s, disabledActions: a }) {
                 color: "rgba(255, 255, 255, 0.6)",
                 sx: { textTransform: "uppercase" },
               },
-              "SKYNET Staked"
+              "RUBIX Staked"
             ),
             e.createElement(
               m,
@@ -2498,8 +2498,8 @@ const Bt = [
 var At = [
   {
     inputs: [
-      { internalType: "address", name: "oldSKYNET", type: "address" },
-      { internalType: "address", name: "oldPHX", type: "address" },
+      { internalType: "address", name: "oldRUBIX", type: "address" },
+      { internalType: "address", name: "oldRUBIX", type: "address" },
     ],
     stateMutability: "nonpayable",
     type: "constructor",
@@ -2626,14 +2626,14 @@ var At = [
   },
   {
     inputs: [{ internalType: "uint256", name: "amount", type: "uint256" }],
-    name: "convertSKYNET",
+    name: "convertRUBIX",
     outputs: [],
     stateMutability: "nonpayable",
     type: "function",
   },
   {
     inputs: [{ internalType: "uint256", name: "amount", type: "uint256" }],
-    name: "convertPHX",
+    name: "convertRUBIX",
     outputs: [],
     stateMutability: "nonpayable",
     type: "function",
@@ -2716,14 +2716,14 @@ var At = [
   },
   {
     inputs: [],
-    name: "oldSKYNET",
+    name: "oldRUBIX",
     outputs: [{ internalType: "address", name: "", type: "address" }],
     stateMutability: "view",
     type: "function",
   },
   {
     inputs: [],
-    name: "oldPHX",
+    name: "oldRUBIX",
     outputs: [{ internalType: "address", name: "", type: "address" }],
     stateMutability: "view",
     type: "function",
@@ -2848,7 +2848,7 @@ function Za(t) {
         );
       let u = await y.all(c);
       n || (u = [void 0, void 0, void 0, void 0, ...u]),
-        t == "SKYNET_V2" && (u[6] = await Ya());
+        t == "RUBIX_V2" && (u[6] = await Ya());
       const [b, f, p, d, g, v, B, k, E, ...z] = u;
       let N = [];
       d &&
@@ -3062,7 +3062,7 @@ function Qa(s) {
         className: "gradientText gradientText--underline",
         onClick: () => o(!0),
       },
-      "$SKYNET Staking Tiers >>"
+      "$RUBIX Staking Tiers"
     ),
     e.createElement(
       ye,
@@ -3088,7 +3088,7 @@ function Qa(s) {
         e.createElement(
           x,
           { fontSize: { xs: "20px", md: "30px" }, fontWeight: "600" },
-          "Staking Tiers ($SKYNET)"
+          "Staking Tiers ($RUBIX)"
         ),
         e.createElement(
           ge,
@@ -3142,26 +3142,26 @@ function $a() {
           justifyContent: "space-between",
           alignItems: "center",
         },
-        e.createElement(Mt, null, "Stake $SKYNET"),
-        e.createElement(Qa, { pool: "SKYNET_V2" })
+        e.createElement(Mt, null, "Stake $RUBIX"),
+        e.createElement(Qa, { pool: "RUBIX_V2" })
       ),
       e.createElement(
         x,
         { variant: "subtitle2", mb: 3, lineHeight: "24px" },
-        "Stake the new SKYNET V2 token to earn SKYNET. ",
+        "Stake the new RUBIX V2 token to earn RUBIX. ",
         e.createElement("br", null),
         "Please migrate your tokens from V1 to V2 in order to participate in this pool."
       ),
       e.createElement(Pt, {
-        pool: "SKYNET_V2",
-        token: "SKYNET",
+        pool: "RUBIX_V2",
+        token: "RUBIX",
         logo: ce,
         color: "#FC4C07",
         links: [
           {
             href: "",
             logo: Ja,
-            text: "Buy $SKYNET",
+            text: "Buy $RUBIX",
           },
         ],
       })
@@ -3192,7 +3192,7 @@ function $a() {
       e.createElement(
         x,
         { variant: "subtitle2", mb: 3, lineHeight: "24px" },
-        "This pool is no longer active. You must unstake and migrate your tokens to the new SKYNET V2 token. Migrate your tokens",
+        "This pool is no longer active. You must unstake and migrate your tokens to the new RUBIX V2 token. Migrate your tokens",
         " ",
         e.createElement(
           Ye,
@@ -3202,8 +3202,8 @@ function $a() {
         "."
       ),
       e.createElement(Pt, {
-        pool: "SKYNET_V1",
-        token: "SKYNET_LEGACY",
+        pool: "RUBIX_V1",
+        token: "RUBIX_LEGACY",
         disabledActions: ["Stake"],
         logo: ce,
         color: "#FC4C07",
@@ -3245,7 +3245,7 @@ function ns({
         try {
           await d(u);
           let E;
-          s === "convertPHX" ? (E = Sn(u.toString(), 8)) : (E = ne(u));
+          s === "convertRUBIX" ? (E = Sn(u.toString(), 8)) : (E = ne(u));
           const z = await c[s](E);
           l(
             e.createElement(
@@ -3262,7 +3262,7 @@ function ns({
             l(
               `Successfully swapped ${T(u)} ${n} to ${T(
                 u.dividedBy(100)
-              )} SKYNET V2`,
+              )} RUBIX V2`,
               { variant: "success" }
             ),
             await g();
@@ -3325,7 +3325,7 @@ function ns({
           e.createElement(Ht, {
             label: "YOU WILL RECEIVE",
             value: T(u.dividedBy(100)),
-            suffix: "SKYNET V2",
+            suffix: "RUBIX V2",
           })
         ),
         y
@@ -3411,34 +3411,34 @@ function Ht({ label: t, value: n, suffix: s }) {
 }
 const as = [
   {
-    token: "SKYNET_LEGACY",
-    tokenName: "SKYNET V1",
-    swapMethodName: "convertSKYNET",
-    tokenTitle: "SKYNET",
+    token: "RUBIX_LEGACY",
+    tokenName: "RUBIX V1",
+    swapMethodName: "convertRUBIX",
+    tokenTitle: "RUBIX",
     description: e.createElement(
       e.Fragment,
       null,
-      "Swap BEP-20 SKYNET V1 tokens for SKYNET V2 tokens ",
+      "Swap BEP-20 RUBIX V1 tokens for RUBIX V2 tokens ",
       e.createElement("br", null),
       " at a 100:1 rate."
     ),
     moreLink:
-      "https://phoenixglobal.medium.com/SKYNET-token-redenomination-1b321687daa",
+      "https://phoenixglobal.medium.com/RUBIX-token-redenomination-1b321687daa",
   },
   {
-    token: "PHX",
-    tokenName: "PHX",
-    swapMethodName: "convertPHX",
-    tokenTitle: "PHX",
+    token: "RUBIX",
+    tokenName: "RUBIX",
+    swapMethodName: "convertRUBIX",
+    tokenTitle: "RUBIX",
     description: e.createElement(
       e.Fragment,
       null,
-      "Swap BEP-20 PHX tokens for SKYNET V2 tokens ",
+      "Swap BEP-20 RUBIX tokens for RUBIX V2 tokens ",
       e.createElement("br", null),
       " at a 100:1 rate."
     ),
     moreLink:
-      "https://phoenixglobal.medium.com/SKYNET-token-redenomination-1b321687daa#be16",
+      "https://phoenixglobal.medium.com/RUBIX-token-redenomination-1b321687daa#be16",
   },
 ];
 function ss() {
@@ -3475,9 +3475,9 @@ me.initialize("UA-199967941-1", {}),
   me.pageview(window.location.pathname + window.location.search);
 function rs() {
   return (
-    Me("SKYNET"),
-    Me("SKYNET_LEGACY"),
-    Me("PHX"),
+    Me("RUBIX"),
+    Me("RUBIX_LEGACY"),
+    Me("RUBIX"),
     e.createElement(
       e.Fragment,
       null,
